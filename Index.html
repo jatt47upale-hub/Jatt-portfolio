@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jatt | Personal Portfolio</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background: #f3f4f6;
+      color: #111827;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header{
+      background: #111827;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav{
+      margin-top: 10px;
+    }
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover{
+      color: #60a5fa;
+    }
+
+    .hero{
+      height: 90vh;
+      background: linear-gradient(to right, #2563eb, #7c3aed);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero img{
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+
+    .hero h1{
+      font-size: 55px;
+    }
+
+    .hero p{
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    .btn{
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: white;
+      color: #111827;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+    .btn:hover{
+      background: #111827;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    section{
+      padding: 60px 10%;
+    }
+
+    .title{
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 35px;
+      color: #2563eb;
+    }
+
+    .card{
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+    }
+
+    .skills span{
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 10px 18px;
+      margin: 8px;
+      border-radius: 25px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .skills span:hover{
+      background: #111827;
+      transform: scale(1.05);
+    }
+
+    footer{
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes gradient{
+      0%{
+        background-position: 0% 50%;
+      }
+      50%{
+        background-position: 100% 50%;
+      }
+      100%{
+        background-position: 0% 50%;
+      }
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size: 38px;
+      }
+
+      .hero p{
+        font-size: 18px;
+      }
+
+      nav a{
+        display: inline-block;
+        margin: 8px;
+      }
+
+      section{
+        padding: 50px 7%;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <h2>Jatt Portfolio</h2>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#goals">Goals</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <div class="hero">
+
+    <!-- Add your image file here -->
+    <img src="myphoto.jpg" alt="Profile Photo">
+
+    <h1>Hello, I'm Jatt</h1>
+
+    <p>
+      Future Web Developer & Designer
+    </p>
+
+    <button class="btn" onclick="location.href='#contact'">
+      Contact Me
+    </button>
+
+  </div>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <h2 class="title">About Me</h2>
+
+    <div class="card">
+
+      <p>
+        I completed my Diploma in Computer Science & Engineering
+        and currently I am preparing for my future studies in
+        NZ Diploma in Web Development & Design.
+      </p>
+
+      <br>
+
+      <p>
+        I am passionate about technology, website development,
+        UI/UX design, and modern digital experiences.
+        I enjoy learning new skills and improving my creativity
+        in the tech field.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+
+  <section id="education">
+
+    <h2 class="title">Education</h2>
+
+    <div class="card">
+
+      <h3>Diploma in Computer Science & Engineering</h3>
+
+      <p>
+        Built foundational knowledge in:
+      </p>
+
+      <ul style="margin-top: 15px; padding-left: 20px;">
+        <li>Programming</li>
+        <li>Database Management</li>
+        <li>Networking</li>
+        <li>Computer Fundamentals</li>
+        <li>Software Concepts</li>
+      </ul>
+
+      <br>
+
+      <h3>
+        Current Goal:
+      </h3>
+
+      <p>
+        NZ Diploma in Web Development & Design
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <h2 class="title">Skills</h2>
+
+    <div class="card">
+
+      <div class="skills">
+
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>UI/UX Design</span>
+        <span>Responsive Design</span>
+        <span>Programming Basics</span>
+        <span>Database</span>
+        <span>Networking</span>
+        <span>GitHub</span>
+        <span>Web Design</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GOALS -->
+
+  <section id="goals">
+
+    <h2 class="title">Career Goals</h2>
+
+    <div class="card">
+
+      <h3>Short-Term Goal</h3>
+
+      <p>
+        Complete advanced studies in Web Development & Design
+        and improve technical and practical skills.
+      </p>
+
+      <br>
+
+      <h3>Mid-Term Goal</h3>
+
+      <p>
+        Work as a professional web developer and gain industry experience.
+      </p>
+
+      <br>
+
+      <h3>Long-Term Goal</h3>
+
+      <p>
+        Build successful digital projects and establish a strong career
+        in the IT industry.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <h2 class="title">Projects</h2>
+
+    <div class="card">
+
+      <h3>Personal Portfolio Website</h3>
+
+      <p>
+        Designed and developed a modern personal portfolio website
+        using HTML, CSS, and JavaScript.
+      </p>
+
+      <br>
+
+      <h3>Future Projects</h3>
+
+      <ul style="margin-top: 15px; padding-left: 20px;">
+        <li>Weather App</li>
+        <li>Calculator</li>
+        <li>Netflix Clone</li>
+        <li>E-Commerce Website</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2 class="title">Contact</h2>
+
+    <div class="card">
+
+      <p><strong>Name:</strong> Jatt</p>
+
+      <p><strong>Email:</strong> yourmail@gmail.com</p>
+
+      <p><strong>Location:</strong> India</p>
+
+      <p><strong>Field:</strong> Web Development & Design</p>
+
+      <br>
+
+      <h3>Social Links</h3>
+
+      <br>
+
+      <p><strong>Instagram:</strong> @yourusername</p>
+
+      <p><strong>LinkedIn:</strong> linkedin.com/in/yourname</p>
+
+      <p><strong>GitHub:</strong> github.com/yourname</p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 Jatt Portfolio | All Rights Reserved
+    </p>
+
+  </footer>
+
+  <script>
+
+    console.log("Jatt Portfolio Website Loaded Successfully");
+
+  </script>
+
+</body>
+</html>
